@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Overtime Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Overtime</h1>
+        <h1 class="star">*</h1>
+        <h1>Calculator</h1>
+    </div>
+    <p>Calculate what you need to do with your overtime with this simple app! </p>
+    <p> Just enter how many hours you've worked so far. This can be found from the timeclock.</p>
+    <div style="text-align: center">
+        <p>Hours worked (So Far)</p>
+        <input type="number" id="OTInput" value="32" maxlength="2" size="2" onchange="updatetxt()" step="0.1" min="0" max="40">
+
+    </div>
+
+    <div style="text-align: center">
+        <p>Days left to work</p>
+        <input type="number" id="DLInput" value="1" onchange="updatetxt()" step="1" min="1" max="6">
+    </div>
+
+    <div style="text-align: center">
+        <p id="OTText" style="color: green">
+            looks like you have no overtime. Good job!
+        </p>
+        <p id="FDText">
+            
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
